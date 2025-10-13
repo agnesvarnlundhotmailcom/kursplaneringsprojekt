@@ -25,7 +25,7 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 - **Brödtext:** din regular
 
 ## Målgrupp 
-**målgrupp** Studenter
+- **målgrupp** Studenter
 ---
 
 ## Struktur 
