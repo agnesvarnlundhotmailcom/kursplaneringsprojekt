@@ -13,19 +13,21 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 
 ## 🎨 Färgpalett 
 
-<div style="display: flex; gap: 10px; flex-wrap: wrap;">
-  <div style="background-color:#4c64ff; width:50px; height:50px;"></div>
-  <div style="background-color:#c8b158; width:50px; height:50px;"></div>
-  <div style="background-color:#fe7791; width:50px; height:50px;"></div>
-  <div style="background-color:#f08e84; width:50px; height:50px;"></div>
-  <div style="background-color:#afd85f; width:50px; height:50px;"></div>
-  <div style="background-color:#c989d1; width:50px; height:50px;"></div>
-  <div style="background-color:#4b64fd; width:50px; height:50px;"></div>
-  <div style="background-color:#ffbe6a; width:50px; height:50px;"></div>
-  <div style="background-color:#6fc3e5; width:50px; height:50px;"></div>
-  <div style="background-color:#64928e; width:50px; height:50px;"></div>
-  <div style="background-color:#c989d1; width:50px; height:50px;"></div>
+### 🎨 Color Palette
+
+<div style="display: flex;">
+  <div style="background-color:#c8b158; width:30px; height:30px;"></div>
+  <div style="background-color:#fe7791; width:30px; height:30px;"></div>
+  <div style="background-color:#f08e84; width:30px; height:30px;"></div>
+  <div style="background-color:#afd85f; width:30px; height:30px;"></div>
+  <div style="background-color:#c989d1; width:30px; height:30px;"></div>
+  <div style="background-color:#4b64fd; width:30px; height:30px;"></div>
+  <div style="background-color:#ffbe6a; width:30px; height:30px;"></div>
+  <div style="background-color:#6fc3e5; width:30px; height:30px;"></div>
+  <div style="background-color:#64928e; width:30px; height:30px;"></div>
+  <div style="background-color:#c989d1; width:30px; height:30px;"></div>
 </div>
+gi
 
 ---
 
