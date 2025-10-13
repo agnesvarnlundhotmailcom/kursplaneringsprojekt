@@ -15,16 +15,18 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 
 ### 🎨 Color Palette
 
-#c8b158 ![#c8b158](https://via.placeholder.com/50/c8b158/000000?text=+)  
-#fe7791 ![#fe7791](https://via.placeholder.com/50/fe7791/000000?text=+)  
-#f08e84 ![#f08e84](https://via.placeholder.com/50/f08e84/000000?text=+)  
-#afd85f ![#afd85f](https://via.placeholder.com/50/afd85f/000000?text=+)  
-#c989d1 ![#c989d1](https://via.placeholder.com/50/c989d1/000000?text=+)  
-#4b64fd ![#4b64fd](https://via.placeholder.com/50/4b64fd/ffffff?text=+)  
-#ffbe6a ![#ffbe6a](https://via.placeholder.com/50/ffbe6a/000000?text=+)  
-#6fc3e5 ![#6fc3e5](https://via.placeholder.com/50/6fc3e5/000000?text=+)  
-#64928e ![#64928e](https://via.placeholder.com/50/64928e/ffffff?text=+)  
-#c989d1 ![#c989d1](https://via.placeholder.com/50/c989d1/000000?text=+)
+| Color | Preview |
+|-------|---------|
+| #c8b158 | ![#c8b158](https://via.placeholder.com/50/c8b158/000000?text=+) |
+| #fe7791 | ![#fe7791](https://via.placeholder.com/50/fe7791/000000?text=+) |
+| #f08e84 | ![#f08e84](https://via.placeholder.com/50/f08e84/000000?text=+) |
+| #afd85f | ![#afd85f](https://via.placeholder.com/50/afd85f/000000?text=+) |
+| #c989d1 | ![#c989d1](https://via.placeholder.com/50/c989d1/000000?text=+) |
+| #4b64fd | ![#4b64fd](https://via.placeholder.com/50/4b64fd/ffffff?text=+) |
+| #ffbe6a | ![#ffbe6a](https://via.placeholder.com/50/ffbe6a/000000?text=+) |
+| #6fc3e5 | ![#6fc3e5](https://via.placeholder.com/50/6fc3e5/000000?text=+) |
+| #64928e | ![#64928e](https://via.placeholder.com/50/64928e/ffffff?text=+) |
+| #c989d1 | ![#c989d1](https://via.placeholder.com/50/c989d1/000000?text=+) |
 
 
 ---
@@ -32,6 +34,9 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 ## Typsnitt
 - **Rubrik:** din-condensed 
 - **Brödtext:** din regular
+
+## Målgrupp 
+Studenter
 ---
 
 ## 🎯 Lärandemål
