@@ -25,8 +25,10 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 - **Brödtext:** din regular
 
 ## Målgrupp 
-Studenter
+**målgrupp** Studenter
 ---
+
+## Struktur 
 
 ## 🎯 Lärandemål
 
@@ -37,8 +39,25 @@ Studenter
   - Kortet **animeras** och **vänder sig**.
   - Kortet **blir större** och visar **förklarande text**.
 
+## Kunskapskontroll
 
+Sektionen "Kunskapskontroll" på hemsidan visar hur studerandes kunskaper utvärderas. Den innehåller två boxar:
 
----
+- **Summativ bedömning** – Beskriver den bedömning.
+- **Formativ bedömning** – Beskriver den löpande bedömning.
+
+## Principer för bedömning och betygskriterier
+
+Denna sektion på hemsidan innehåller flera boxar med olika rubriker som visar betygskriterier. Varje box har en pilner som användaren kan klicka på för att visa en mer detaljerad förklaring.  
+
+Exempel på boxar:  
+- **Icke godkänt (IG)**  
+- **Godkänt (G)**  
+- **Väl godkänt (VG)** 
+
+## Rätt till särskilt pedagogiskt stöd och komplettering
+
+Denna sektion på hemsidan innehåller en **bild med texten "Behöver du hjälp med detta?"** och en **knapp** som leder till en sida med mer information.  
+
 
 
