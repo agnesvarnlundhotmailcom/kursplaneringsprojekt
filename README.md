@@ -13,8 +13,6 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 
 ## 🎨 Färgpalett 
 
-### 🎨 Color Palette
-
 `#c8b158` `#fe7791` `#f08e84` `#afd85f` `#c989d1`  
 `#4b64fd` `#ffbe6a` `#6fc3e5` `#64928e` `#c989d1`
 
