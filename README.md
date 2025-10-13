@@ -5,6 +5,9 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 ---
 
 ### Struktur
+
+![struktur](image-2.png)
+
 - **H1 + Header:** En tydlig rubrik och en introduktionssektion direkt under headern.
 - **Introduktionsbild:**  
   ![Header](image.png)
@@ -58,5 +61,3 @@ Denna sektion på hemsidan innehåller en **bild med texten "Behöver du hjälp 
 
 ## Länkmedtext till mindmapp 
 - https://docs.google.com/document/d/1T9Kl1NSehktstvPBFwrg8Tx5TfBtG8UBY7e-fyvmgKk/edit?tab=t.0
-
-![struktur](image-2.png)
