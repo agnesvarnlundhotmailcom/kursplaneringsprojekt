@@ -17,7 +17,7 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 
 ### Kunskap + Färdighet
 - Presenteras som en **mindmap** med olika bilder och ikoner kopplade till rubriker.
-- Varje kort visar en **rubrik** (t.ex. “Analysförmåga”, “Kommunikation”).
+- Varje kort visar en **rubrik** (t.ex. “Javasscript”, “UX”).
 - När man **klickar eller vänder** på ett kort:
   - Kortet **animeras** och **vänder sig**.
   - Kortet **blir större** och visar **förklarande text**.
