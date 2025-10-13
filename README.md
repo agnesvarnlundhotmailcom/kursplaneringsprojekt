@@ -4,10 +4,11 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 
 ---
 
-### Struktur
+## Struktur
 
 ![struktur](image-2.png)
 
+## Header 
 - **H1 + Header:** En tydlig rubrik och en introduktionssektion direkt under headern.
 - **Introduktionsbild:**  
   ![Header](image.png)
@@ -19,14 +20,14 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
   - Kortet **animeras** och **vänder sig**.
   - Kortet **blir större** och visar **förklarande text**.
 
-## Kunskapskontroll
+### Kunskapskontroll
 
 Sektionen "Kunskapskontroll" på hemsidan visar hur studerandes kunskaper utvärderas. Den innehåller två boxar:
 
 - **Summativ bedömning** – Beskriver den bedömning.
 - **Formativ bedömning** – Beskriver den löpande bedömning.
 
-## Principer för bedömning och betygskriterier
+### Principer för bedömning och betygskriterier
 
 Denna sektion på hemsidan innehåller flera boxar med olika rubriker som visar betygskriterier. Varje box har en pilner som användaren kan klicka på för att visa en mer detaljerad förklaring.  
 
@@ -35,7 +36,7 @@ Exempel på boxar:
 - **Godkänt (G)**  
 - **Väl godkänt (VG)** 
 
-## Rätt till särskilt pedagogiskt stöd och komplettering
+### Rätt till särskilt pedagogiskt stöd och komplettering
 
 Denna sektion på hemsidan innehåller en **bild med texten "Behöver du hjälp med detta?"** och en **knapp** som leder till en sida med mer information.  
 
@@ -43,21 +44,21 @@ Denna sektion på hemsidan innehåller en **bild med texten "Behöver du hjälp 
 
 ## Designer
 
-## Färgpalett 
+### Färgpalett 
 
 `#c8b158` `#fe7791` `#f08e84` `#afd85f` `#c989d1`  
 `#4b64fd` `#ffbe6a` `#6fc3e5` `#64928e` `#c989d1`
 
 ![färgpalett](image-1.png)
 
-## Typsnitt
+### Typsnitt
 - **Rubrik:** din-condensed 
 - **Brödtext:** din regular
 
-## Målgrupp 
+### Målgrupp 
 - **målgrupp** Studenter
 ---
 
 
-## Länkmedtext till mindmapp 
+### Länkmedtext till mindmapp 
 - https://docs.google.com/document/d/1T9Kl1NSehktstvPBFwrg8Tx5TfBtG8UBY7e-fyvmgKk/edit?tab=t.0
