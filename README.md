@@ -8,7 +8,7 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 
 ![struktur](image-2.png)
 
-## Header 
+## One Page 
 - **H1 + Header:** En tydlig rubrik och en introduktionssektion direkt under headern.
 - **Introduktionsbild:**  
   ![Header](image.png)
