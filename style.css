@@ -39,3 +39,7 @@ h1 {
 }
 
 
+.zaida-footer img {
+    border-radius: 100%;
+    height: 50px;
+}
