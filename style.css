@@ -1,6 +1,6 @@
 body {
     background-color: lightgrey;
-    margin:0
+    /* margin:2px; */
 }
 
 .rubrik{
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #333;
 }
 
@@ -46,14 +46,33 @@ h1 {
 
 /* COPILOTS FÖRSLAG */
 /* ...existing code... */
+
+.moment-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
 .javascript {
     /* normal layout */
+    display: block;
     border: 1px solid black;
     padding: 5px;
     position: relative;
-    height: auto;
+    height: 200px;
     perspective: 1000px; /* behövs för 3D-effekt */
     cursor: pointer;
+    border-radius: 20px;
+    text-align: left;
+    list-style:square;
+}
+.javascript img{
+height: 100px;
 }
 
 /* inre roterande element */
@@ -84,8 +103,8 @@ h1 {
 .javascript.flipped {
     position: fixed;
     inset: 30px;      /* top/right/bottom/left = 30px */
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 350px;
     z-index: 9999;
     background: white; /* valfritt, för att ligga över annat innehåll */
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
