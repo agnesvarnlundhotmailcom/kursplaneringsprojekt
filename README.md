@@ -6,12 +6,12 @@ Detta projekt handlar om att skapa en digital kursplaneringsplattform med ett in
 
 ## Struktur
 
-![struktur](image-2.png)
+![struktur](Readme.bilder/image-2.png)
 
 ## One Page 
 - **H1 + Header:** En tydlig rubrik och en introduktionssektion direkt under headern.
 - **Introduktionsbild:**  
-  ![Header](image.png)
+  ![Header](Readme.bilder/image.png)
 
 ### Lärandemål: Kunskap + Färdighet
 - Presenteras som en **mindmap** med olika bilder och ikoner kopplade till rubriker.
@@ -49,7 +49,7 @@ Denna sektion på hemsidan innehåller en **bild med texten "Behöver du hjälp 
 `#c8b158` `#fe7791` `#f08e84` `#afd85f` `#c989d1`  
 `#4b64fd` `#ffbe6a` `#6fc3e5` `#64928e` `#c989d1`
 
-![färgpalett](image-1.png)
+![färgpalett](Readme.bilder/image-1.png)
 
 ### Typsnitt
 - **Rubrik:** din-condensed 
