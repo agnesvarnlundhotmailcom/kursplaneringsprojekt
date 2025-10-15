@@ -2,6 +2,17 @@ body {
     background-color: lightgrey;
     margin:0
 }
+
+.rubrik{
+    font-size: 1.5rem;
+    color: #333;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
 .stöd_omprov-container {
     display: grid;
     grid-template-columns: auto auto;
