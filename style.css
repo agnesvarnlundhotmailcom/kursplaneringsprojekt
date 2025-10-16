@@ -1,16 +1,46 @@
 body {
-    background-color: lightgrey;
-    margin:0
+    background-color: rgb(231, 225, 218);
+    margin:0;
+    padding: 0 20px;
 }
 
 .rubrik{
     font-size: 1.5rem;
-    color: #333;
+    color:#c989d1;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 h1 {
     font-size: 3rem;
     color: #333;
+    font-family: "Oswald", sans-serif; 
+    text-align: center; 
+    margin-top: 0;
+}
+
+.beskrivning {
+    background-color: white; 
+    padding: 20px;           
+    margin: 20px auto; 
+    max-width: 430px;
+    border-radius: 0px; 
+    font-family: "Oswald", sans-serif;
+    line-height: 1.6;
+}
+
+@media (min-width: 700px) {
+    
+    .beskrivning {
+        background-color: white; 
+        padding: 20px; 
+        margin: 20px auto; 
+        max-width: 1300px; 
+        border-radius: 0px; 
+        font-family: "Oswald", sans-serif; 
+        line-height: 1.6;
+    }
 }
 
 .stöd_omprov-container {
