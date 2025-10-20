@@ -18,3 +18,11 @@ accordionItems.forEach(item => {
 document.getElementById("Fio").addEventListener("dblclick", () => {
   alert("Fiorella GitHub: https://github.com/FiorellaDiGiulio");
 });
+
+const cards = document.querySelectorAll('.card');
+
+cards.forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('flipped');
+  });
+});
