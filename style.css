@@ -1,16 +1,50 @@
 body {
-    background-color: lightgrey;
-    margin:0
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(248, 248, 248);
+  margin: 0;
+  padding: 40px;
+  color: #1e1e1e;
 }
 
 .rubrik{
     font-size: 1.5rem;
-    color: #333;
+    color:#c989d1;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin-bottom: 0px;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #333;
+    font-family: "Oswald", sans-serif; 
+    text-align: center; 
+    margin-top: 0;
+}
+
+.beskrivning {
+    background-color: white; 
+    padding: 20px;           
+    margin: 20px auto; 
+    max-width: 430px;
+    border-radius: 0px; 
+    font-family: "Oswald", sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+@media (min-width: 700px) {
+    
+    .beskrivning {
+        background-color: white; 
+        padding: 20px; 
+        margin: 20px auto; 
+        max-width: 1300px; 
+        border-radius: 0px; 
+        font-family: "Oswald", sans-serif; 
+        line-height: 1.6;
+        text-align: center;
+    }
 }
 
 .stöd_omprov-container {
@@ -44,6 +78,81 @@ h1 {
     height: 50px;
 }
 
+/* COPILOTS FÖRSLAG */
+/* ...existing code... */
+
+.moment-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+    font-size: 20px;
+}
+
+.javascript {
+    /* normal layout */
+    display: block;
+    border: 1px solid black;
+    padding: 5px;
+    position: relative;
+    height: 200px;
+    perspective: 1000px; /* behövs för 3D-effekt */
+    cursor: pointer;
+    border-radius: 20px;
+    text-align: left;
+    list-style:square;
+}
+.javascript img{
+height: 100px;
+}
+
+/* inre roterande element */
+.javascript .inner {
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* båda sidorna av "kortet" */
+.javascript .face {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    position: relative;
+}
+
+/* baksidan vänd 180deg så den syns när inner roteras */
+.javascript .face.back {
+    transform: rotateY(180deg);
+}
+
+/* när vi "flippar" kortet roteras inner */
+.javascript.flipped .inner {
+    transform: rotateY(180deg);
+}
+
+/* overlay-läge: täcker hela skärmen med 30px marginal runtom */
+.javascript.flipped {
+    position: fixed;
+    inset: 30px;      /* top/right/bottom/left = 30px */
+    width: 500px;
+    height: 350px;
+    z-index: 9999;
+    background: white; /* valfritt, för att ligga över annat innehåll */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    margin: 0;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+/* se till att bilder/innhållet anpassar sig i overlay */
+.javascript.flipped .face {
+    width: 100%;
+    height: 100%;
+}
+/* ...existing code... */
 /* Fio */
 
 .team-footer {
@@ -51,7 +160,7 @@ h1 {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  background: #222;
+  background: #ffffff;
 }
 
 .avatar {
@@ -66,4 +175,80 @@ h1 {
 .avatar:hover {
   transform: scale(1.1);
   box-shadow: 0 0 10px #000000;
+}
+
+/*Fio*/
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.box h3 {
+  color: #c989d1;
+  margin-top: 0;
+}
+
+/* dragspel */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  color: #c989d1;
+}
+
+.accordion-header:hover {
+  background-color: #bbdefb;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1.2rem;
+  background-color: #fff;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 400px;
+  padding: 1rem 1.2rem;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(180deg);
 }
