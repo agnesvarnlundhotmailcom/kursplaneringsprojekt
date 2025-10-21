@@ -6,6 +6,34 @@ body {
   color: #1e1e1e;
 }
 
+/* HERO-DELEN MED BAKGRUNDSBILD */
+.hero {
+  background-image: url('Bilder-Fio/logo.svg'); /* byt till din bild */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Mörk overlay så texten blir tydlig */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* ändra 0.5 till mer/mindre genomskinligt */
+  z-index: 0;
+}
+
+.hero * {
+  position: relative;
+  z-index: 1;
+}
+
 .rubrik{
     font-size: 1.5rem;
     color:#c989d1;
@@ -16,7 +44,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: #333;
+    color: #ffffff;
     font-family: "Oswald", sans-serif; 
     text-align: center; 
     margin-top: 0;
@@ -31,6 +59,7 @@ h1 {
     font-family: "Oswald", sans-serif;
     line-height: 1.6;
     text-align: center;
+    color: #000000;
 }
 
 @media (min-width: 700px) {
