@@ -9,29 +9,28 @@ body {
 /* HERO-DELEN MED BAKGRUNDSBILD */
 .hero {
   background-image: url('Bilder-Fio/logo.svg'); /* byt till din bild */
-  background-size: cover;
+  background-size: 20%;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   padding: 100px 20px;
   text-align: center;
-  color: white;
+  color: transparent;
   border-radius: 12px;
   overflow: hidden;
 }
 
-/* Mörk overlay så texten blir tydlig */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5); /* ändra 0.5 till mer/mindre genomskinligt */
+  background: rgba(248, 248, 248, 0.572); /* vit overlay med 50% opacitet */
   z-index: 0;
 }
 
 .hero * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .rubrik{
@@ -44,7 +43,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
-    color: #ffffff;
+    color: #000000;
     font-family: "Oswald", sans-serif; 
     text-align: center; 
     margin-top: 0;
@@ -75,14 +74,14 @@ h1 {
         text-align: center;
     }
 }
-
+/* -------------->  Zaidas sektion <---------------*/
 .stöd_omprov-container {
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto;
     width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
+    max-width: 700px;
+    margin: auto;
 }
 #komplettering_och_omprov-section {
     grid-column: 1;
@@ -90,15 +89,23 @@ h1 {
 }
 #pedagogiskt_stod-section{
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
 }
 
 
-#komplettering_och_omprov-section img, 
-#pedagogiskt_stod-section img {
+#komplettering_och_omprov-section img {
+      display: block;
+    max-width: 180px;
+    max-height: auto;
+    justify-self: left;
+    align-self: baseline;
+  } 
+  #pedagogiskt_stod-section img {
     display: block;
-    max-width: 100%;
-    height: auto;
+    max-width: 200px;
+    max-height: auto;
+    justify-self: right;
+    align-self:last baseline
 }
 
 
@@ -182,6 +189,10 @@ height: 100px;
     height: 100%;
 }
 /* ...existing code... */
+
+/* -------------> Zaidas kod slut <------------- */
+
+
 /* Fio */
 
 .team-footer {
