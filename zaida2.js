@@ -1,26 +1,22 @@
 // Hämta alla element med klassen 'card' och lagra dem i en lista (NodeList)
 const cards = document.querySelectorAll('.card');
 
+// Loopar igenom varje 'card' i listan
 cards.forEach(card => {
+
+  // Lägger till en händelselyssnare på varje kort som reagerar på klick
   card.addEventListener('click', () => {
+
+    // Letar upp det kort som för tillfället har klassen 'active'
     const active = document.querySelector('.card.active');
 
-    // Om ett annat kort redan är aktivt, stäng det
+    // Om det finns ett aktivt kort OCH det inte är samma kort som vi just klickade på...
     if (active && active !== card) {
+      // ...så tar vi bort klassen 'active' från det andra kortet
       active.classList.remove('active');
-      active.classList.add('closing');
-      // Vänta tills animationen är klar, ta bort 'closing'
-      setTimeout(() => active.classList.remove('closing'), 600);
     }
 
-    // Om samma kort klickas igen – stäng det
-    if (card.classList.contains('active')) {
-      card.classList.remove('active');
-      card.classList.add('closing');
-      setTimeout(() => card.classList.remove('closing'), 600);
-    } else {
-      // Annars – öppna det
-      card.classList.add('active');
-    }
+    // Växlar 'active'-klassen på det kort vi klickade på (lägger till om den saknas, tar bort om den finns)
+    card.classList.toggle('active');
   });
 });
