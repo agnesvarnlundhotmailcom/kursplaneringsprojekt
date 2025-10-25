@@ -1,26 +1,29 @@
 /* ======= BAS ======= */
 body {
-  background-image: url('Bilder_Zaida/coolbackgrounds-fractalize-cool_backgrounds.png');
+  background-image: url('Bilder_Zaida/coolbackgrounds-topography-micron.svg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom; /* 👈 Bilden förankras längst ner */
+  background-position: center bottom;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: flex-start;  /* 👈 placerar stacken upptill istället för mitt på */
+  align-items: flex-start;
   height: 100vh;
   margin: 0;
-  padding-top: 60px;        /* 👈 lite luft från toppen */
+  padding-top: 60px;
   perspective: 2000px;
 }
+
 .stack {
   position: relative;
   width: 1000px;
   height: 140px;
   cursor: pointer;
+  transform: rotate(90deg); /* 👈 hela högen vrids 90° på mobilläge */
+  transform-origin: center center;
 }
 
-/* ======= KORTENS GRUNDLÄGE ======= */
+/* ======= KORTENS GRUNDLÄGE (standard: mobil) ======= */
 .card {
   position: absolute;
   width: 200px;
@@ -31,16 +34,16 @@ body {
   border-radius: 12px;
 }
 
-/* ======= KORTENS POSITION I HÖGEN ======= */
-.card:nth-child(1) { transform: translate(-160px, 0px); z-index: 9; }
-.card:nth-child(2) { transform: translate(-120px, 0px); z-index: 8; }
-.card:nth-child(3) { transform: translate(-80px, 0px);  z-index: 7; }
-.card:nth-child(4) { transform: translate(-40px, 0px);  z-index: 6; }
-.card:nth-child(5) { transform: translate(0px, 0px);    z-index: 5; }
-.card:nth-child(6) { transform: translate(40px, 0px);   z-index: 4; }
-.card:nth-child(7) { transform: translate(80px, 0px);   z-index: 3; }
-.card:nth-child(8) { transform: translate(120px, 0px);  z-index: 2; }
-.card:nth-child(9) { transform: translate(160px, 0px);  z-index: 1; }
+/* ======= KORTENS POSITION I HÖGEN (mobil: roterade) ======= */
+.card:nth-child(1) { transform: translate(-160px, 0px) rotate(-90deg); z-index: 9; }
+.card:nth-child(2) { transform: translate(-120px, 0px) rotate(-90deg); z-index: 8; }
+.card:nth-child(3) { transform: translate(-80px, 0px)  rotate(-90deg); z-index: 7; }
+.card:nth-child(4) { transform: translate(-40px, 0px)  rotate(-90deg); z-index: 6; }
+.card:nth-child(5) { transform: translate(0px, 0px)    rotate(-90deg); z-index: 5; }
+.card:nth-child(6) { transform: translate(40px, 0px)   rotate(-90deg); z-index: 4; }
+.card:nth-child(7) { transform: translate(80px, 0px)   rotate(-90deg); z-index: 3; }
+.card:nth-child(8) { transform: translate(120px, 0px)  rotate(-90deg); z-index: 2; }
+.card:nth-child(9) { transform: translate(160px, 0px)  rotate(-90deg); z-index: 1; }
 
 /* ======= KORTETS INRE DEL ======= */
 .card-inner {
@@ -62,23 +65,23 @@ body {
   backface-visibility: hidden;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
-  background: #ffffff; /* samma färg på båda sidor */
+  background: #ffffff;
   overflow: hidden;
   transition: background 0.3s ease;
 }
 
-/* ======= FRAMSIDA: VERTIKAL TEXT ======= */
+/* ======= FRAMSIDA ======= */
 .card-front {
   position: relative;
   box-shadow: 0 0 50px rgba(0,0,0,0.4);
 }
 
-/* Textetikett längs högerkanten (bokryggs-stil) */
+/* ======= TEXTETIKETT PÅ FRAMSIDA ======= */
 .card-front .label {
   position: absolute;
   top: 50%;
   right: 6px;
-  transform: translateY(-50%) rotate(180deg);
+  transform: translateY(-50%) rotate(0deg);
   writing-mode: vertical-rl;
   text-orientation: mixed;
   white-space: nowrap;
@@ -109,14 +112,15 @@ body {
   top: 50%;
   left: 50%;
   width: 80vw;
-  aspect-ratio: 2 / 3;            /* samma proportioner som 200x300 */
+  aspect-ratio: 2 / 3;
   max-height: 80vh;
   transform: translate(-50%, -54%) scale(1);
   z-index: 999;
   animation: zoomIn 0.4s ease forwards;
 }
-.card.active li{
- font-size: 20px
+
+.card.active li {
+  font-size: 20px;
 }
 
 .card.active .card-inner {
@@ -138,4 +142,22 @@ body {
     transform: translate(-50%, -54%) scale(1);
     opacity: 1;
   }
+}
+
+/* ======= DESKTOP (över 700px): återgå till liggande kort ======= */
+@media (min-width: 700px) {
+
+  .stack {
+    transform: rotate(0deg);
+  }
+
+  .card:nth-child(1) { transform: translate(-160px, 0px); z-index: 9; }
+  .card:nth-child(2) { transform: translate(-120px, 0px); z-index: 8; }
+  .card:nth-child(3) { transform: translate(-80px, 0px);  z-index: 7; }
+  .card:nth-child(4) { transform: translate(-40px, 0px);  z-index: 6; }
+  .card:nth-child(5) { transform: translate(0px, 0px);    z-index: 5; }
+  .card:nth-child(6) { transform: translate(40px, 0px);   z-index: 4; }
+  .card:nth-child(7) { transform: translate(80px, 0px);   z-index: 3; }
+  .card:nth-child(8) { transform: translate(120px, 0px);  z-index: 2; }
+  .card:nth-child(9) { transform: translate(160px, 0px);  z-index: 1; }
 }
