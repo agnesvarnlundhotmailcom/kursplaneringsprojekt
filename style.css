@@ -9,27 +9,32 @@ body {
 /* HERO-DELEN MED BAKGRUNDSBILD */
 .hero {
   background-image: url('Bilder-Fio/logo.svg'); /* byt till din bild */
+  background-size: cover;
   background-size: 20%;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   padding: 100px 20px;
   text-align: center;
+  color: white;
   color: transparent;
   border-radius: 12px;
   overflow: hidden;
 }
 
+/* Mörk overlay så texten blir tydlig */
 .hero::before {
   content: "";
   position: absolute;
   inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* ändra 0.5 till mer/mindre genomskinligt */
   background: rgba(248, 248, 248, 0.572); /* vit overlay med 50% opacitet */
   z-index: 0;
 }
 
 .hero * {
   position: relative;
+  z-index: 1;
   z-index: 2;
 }
 
@@ -43,6 +48,7 @@ body {
 
 h1 {
     font-size: 2.5rem;
+    color: #ffffff;
     color: #000000;
     font-family: "Oswald", sans-serif; 
     text-align: center; 
@@ -62,7 +68,6 @@ h1 {
 }
 
 @media (min-width: 700px) {
-    
     .beskrivning {
         background-color: white; 
         padding: 20px; 
@@ -108,14 +113,13 @@ h1 {
     align-self:last baseline
 }
 
-
+/* -------Z-------- */
 .zaida-footer img {
     border-radius: 100%;
     height: 50px;
 }
 
-/* COPILOTS FÖRSLAG */
-/* ...existing code... */
+/* ---------Z---------------------- */
 
 .moment-container {
     display: grid;
@@ -127,7 +131,7 @@ h1 {
     margin: 20px 0;
     font-size: 20px;
 }
-
+/* ----------Z---------- */
 .javascript {
     /* normal layout */
     display: block;
@@ -139,7 +143,7 @@ h1 {
     cursor: pointer;
     border-radius: 20px;
     text-align: left;
-    list-style:square;
+    list-style: none;
 }
 .javascript img{
 height: 100px;
@@ -174,7 +178,7 @@ height: 100px;
     position: fixed;
     inset: 30px;      /* top/right/bottom/left = 30px */
     width: 500px;
-    height: 350px;
+    height: auto;
     z-index: 9999;
     background: white; /* valfritt, för att ligga över annat innehåll */
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
@@ -188,7 +192,7 @@ height: 100px;
     width: 100%;
     height: 100%;
 }
-/* ...existing code... */
+
 
 /* -------------> Zaidas kod slut <------------- */
 
