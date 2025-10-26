@@ -70,16 +70,19 @@ body {
 
 .card-front { 
   box-shadow: 0 0 50px rgba(0,0,0,0.4); }
-
-.card-back  {
-  transform: rotateX(-180deg) ;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  color: #333;
+  
+  .card-back  {
+    transform: rotateX(-180deg) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    padding: 10px;
+    color: #333;
+}
+h2, h3, h4, p {
+  margin: 5px;
+  gap: 0px;
 }
 
 /* ======= AKTIVT KORT (ÖPPNAS) ======= */
