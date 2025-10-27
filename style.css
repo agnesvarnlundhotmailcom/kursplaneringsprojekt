@@ -74,6 +74,280 @@ h1 {
         text-align: center;
     }
 }
+
+/* MINDMAPP (Fio) */
+/*  BAS (mobil först) */
+
+.mindmap {
+  position: relative;
+  width: 100%;
+  padding: 1rem;
+
+  /* Mobil: stapla kort i kolumn */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+} 
+
+.center {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  z-index: 10;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.center h1 {
+  background: linear-gradient(90deg, #c989d1, #e1aee8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.center p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ==== Kort (mobil layout: grid) ==== */
+.card {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto;
+  perspective: 1000px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  text-align: center;
+}
+
+.card-front img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+.card-front h2 {
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  font-size: 0.8rem;
+  color: #444;
+}
+
+/* ==== Desktop layout (mindmap-positioner) ==== */
+@media (min-width: 768px) {
+  body .mindmap{
+    height: 100ch;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    max-width: none;
+  }
+
+  .card {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Position runt mitten */
+  .js { top: 5%; left: 50%; transform: translateX(-50%); }
+  .ux { top: 25%; right: 5%; }
+  .db { top: 60%; right: 12%; }
+  .react { bottom: 5%; left: 50%; transform: translateX(-50%); }
+  .git { top: 60%; left: 12%; }
+  .responsive { top: 25%; left: 5%; }
+}
+
+/* --- FÄRGER PER KORT --- */
+.card.js .card-front {
+  background: linear-gradient(135deg, #ffe97f, #ffd54f);
+}
+.card.js .card-back {
+  background: #fff7cc;
+}
+
+.card.ux .card-front {
+  background: linear-gradient(135deg, #c989d1, #d593f4);
+}
+.card.ux .card-back {
+  background: #fbe6ff;
+}
+
+.card.db .card-front {
+  background: linear-gradient(135deg, #9de1ff, #4b64fd);
+}
+.card.db .card-back {
+  background: #e6f7ff;
+}
+
+.card.react .card-front {
+  background: linear-gradient(135deg, #6fc3e5, #47d7cc);
+}
+.card.react .card-back {
+  background: #d6faf6;
+}
+
+.card.git .card-front {
+  background: linear-gradient(135deg,#f08e84,#fe7791);
+}
+.card.git .card-back {
+  background: #ffe3dc;
+}
+
+.card.responsive .card-front {
+  background: linear-gradient(135deg, #afd85f, #6ef59c);
+}
+.card.responsive .card-back {
+  background: #e5ffe9;
+}
+
+/*Kunskapkontroll sumativ och formativ (Fio)*/
+.team-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background: #ffffff;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #000000;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.box h3 {
+  color: #c989d1;
+  margin-top: 0;
+}
+
+/* dragspel */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  color: #c989d1;
+}
+
+.accordion-header:hover {
+  background-color: #bbdefb;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1.2rem;
+  background-color: #fff;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 400px;
+  padding: 1rem 1.2rem;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(180deg);
+}
+/*Slut-Fio*/
+
 /* -------------->  Zaidas sektion <---------------*/
 .stöd_omprov-container {
     display: grid;
@@ -191,104 +465,3 @@ height: 100px;
 /* ...existing code... */
 
 /* -------------> Zaidas kod slut <------------- */
-
-
-/* Fio */
-
-.team-footer {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-  background: #ffffff;
-}
-
-.avatar {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 3px solid white;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.avatar:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 10px #000000;
-}
-
-/*Fio*/
-h2 {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.section {
-  max-width: 800px;
-  margin: 0 auto 2rem;
-}
-
-.box {
-  background: white;
-  border-radius: 16px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.box h3 {
-  color: #c989d1;
-  margin-top: 0;
-}
-
-/* dragspel */
-.accordion {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.accordion-item {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  margin-bottom: 1rem;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.accordion-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 1.2rem;
-  background-color: #ffffff;
-  cursor: pointer;
-  font-weight: bold;
-  color: #c989d1;
-}
-
-.accordion-header:hover {
-  background-color: #bbdefb;
-}
-
-.accordion-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease, padding 0.3s ease;
-  padding: 0 1.2rem;
-  background-color: #fff;
-}
-
-.accordion-item.active .accordion-content {
-  max-height: 400px;
-  padding: 1rem 1.2rem;
-}
-
-.arrow {
-  transition: transform 0.3s ease;
-}
-
-.accordion-item.active .arrow {
-  transform: rotate(180deg);
-}
