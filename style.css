@@ -177,7 +177,7 @@ h1 {
 }
 
 /* ==== Desktop layout (mindmap-positioner) ==== */
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   body .mindmap{
     height: 100ch;
     display: flex;
