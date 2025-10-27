@@ -86,16 +86,14 @@ h1 {
 
 .mindmap {
   position: relative;
-  width: 90%;
-  padding: 1em;
-
+  width: 100%;
+  padding: 1rem;
 
   /* Mobil: stapla kort i kolumn */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  margin: auto;
 } 
 
 .center {
@@ -469,6 +467,6 @@ height: 100px;
     width: 100%;
     height: 100%;
 }
-/* ...existing code... */
+
 
 /* -------------> Zaidas kod slut <------------- */
