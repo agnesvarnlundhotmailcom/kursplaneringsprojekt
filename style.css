@@ -469,4 +469,106 @@ height: 100px;
 }
 
 
-/* -------------> Zaidas kod slut <------------- */
+/* Fio */
+
+.team-footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  background: #ffffff;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px #000000;
+}
+
+.member {
+  text-align: center;
+}
+
+/*Fio*/
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.section {
+  max-width: 800px;
+  margin: 0 auto 2rem;
+}
+
+.box {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.box h3 {
+  color: #c989d1;
+  margin-top: 0;
+}
+
+/* dragspel */
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.2rem;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  color: #c989d1;
+}
+
+.accordion-header:hover {
+  background-color: #bbdefb;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 1.2rem;
+  background-color: #fff;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 400px;
+  padding: 1rem 1.2rem;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion-item.active .arrow {
+  transform: rotate(180deg);
+}
