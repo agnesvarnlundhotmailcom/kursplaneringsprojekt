@@ -1,3 +1,10 @@
+// MindmApp
+document.querySelectorAll(".card").forEach((card) => {
+  card.addEventListener("click", () => {
+    card.classList.toggle("flipped");
+  });
+});
+
 // Hämtar alla dragspelssektioner
 const accordionItems = document.querySelectorAll('.accordion-item');
 
